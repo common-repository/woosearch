@@ -1,0 +1,469 @@
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-collapse: inherit;
+  border-spacing: 0;
+  border-color: inherit;
+  vertical-align: inherit;
+  text-align: left;
+  font-weight: inherit;
+  -webkit-border-horizontal-spacing: 0;
+  -webkit-border-vertical-spacing: 0;
+}
+
+.move {
+  cursor: move;
+}
+
+.move-icon {
+  width: 8px;
+  height: 40px;
+  display: inline-block;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAB3RJTUUH3wIDBycZ/Cj09AAAAAlwSFlzAAALEgAACxIB0t1+/AAAAARnQU1BAACxjwv8YQUAAAAWSURBVHjaY2DABhoaGupBGMRmYiAEAKo2BAFbROu9AAAAAElFTkSuQmCC");
+  cursor: move;
+  margin-right: 10px;
+}
+
+a.button-blue,
+input.button-green {
+  background: #2EA2CC;
+  border: 1px solid #0074A2;
+  border-radius: 3px;
+  font-size: 14px;
+  color: #FFFFFF;
+  letter-spacing: 0px;
+  padding: 8px 10px;
+  cursor: pointer;
+  line-height: 1;
+  margin-top: 2px;
+  display: inline-block;
+}
+
+a.button-blue:hover,
+input.button-green:hover {
+  background: #298CBA;
+}
+
+a.button-blue:hover i,
+input.button-green:hover i {
+  color: #FFFFFF;
+}
+
+body .swal2-modal button.styled {
+  background: #2EA2CC !important;
+  border: 1px solid #0074A2 !important;
+  font-size: 14px;
+  padding: 10px 20px;
+  line-height: 1;
+}
+
+input.button-green {
+  background: #26C281;
+  border: 1px solid #1C9563;
+}
+
+input.button-green:hover {
+  background: #1dac71;
+}
+
+.remove {
+  cursor: pointer;
+  width: 27px;
+  height: 27px;
+  background: url("../images/btn-delete.jpg") no-repeat center;
+  margin: 5px 0 0 8px;
+}
+
+.remove:hover {
+  opacity: .8;
+}
+
+a.btn-question {
+  float: right;
+  color: #979797;
+  font-size: 18px;
+}
+
+#poststuff h2 {
+  font-size: 16px;
+  color: #5C5C5C;
+  padding: 10px 20px;
+}
+
+.section-placeholder {
+  width: 100%;
+}
+
+@media (min-width: 64em) {
+  .section-placeholder {
+    font-size: 16px;
+    vertical-align: top;
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 64em) and (min-width: 768px) {
+  .section-placeholder {
+    width: 58.33333%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width: 64em) {
+  .section-placeholder.fluid {
+    width: 58.33333%;
+  }
+}
+
+@media (min-width: 85.375em) {
+  .section-placeholder {
+    font-size: 16px;
+    vertical-align: top;
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 85.375em) and (min-width: 768px) {
+  .section-placeholder {
+    width: 33.33333%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width: 85.375em) {
+  .section-placeholder.fluid {
+    width: 33.33333%;
+  }
+}
+
+.blue-box {
+  background: #CBDCEC;
+  border: 1px solid #B5C5D5;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.09);
+  font-size: 13px;
+  color: #569CDD;
+  padding: 2px 5px 2px 5px;
+  position: relative;
+}
+
+@media (min-width: 64em) {
+  .blue-box {
+    padding: 2px 10px 2px 15px;
+  }
+}
+
+.blue-box span {
+  line-height: 1.5;
+  padding: 8px 0 8px 5px;
+  display: inline-block;
+  font-size: 12px;
+}
+
+@media (min-width: 64em) {
+  .blue-box span {
+    padding: 8px 5px 8px 5px;
+    font-size: 13px;
+  }
+}
+
+.blue-box .button-blue {
+  float: right;
+}
+
+.template {
+  display: none;
+}
+
+.post-detail-box {
+  padding: 25px;
+}
+
+.placeholder-box,
+.dashed-line-box {
+  background: #FFFFFF;
+  border: 1px solid #CECECE;
+  border-radius: 3px;
+  font-size: 14px;
+  color: #979797;
+  padding: 10px;
+  clear: both;
+  overflow: hidden;
+  margin: 0 4% 4% 4%;
+  width: auto;
+}
+
+.placeholder-box .img-box,
+.dashed-line-box .img-box {
+  font-size: 16px;
+  vertical-align: top;
+  display: inline-block;
+  max-width: 40px;
+  margin-right: 10px;
+  position: relative;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 768px) {
+  .placeholder-box .img-box,
+  .dashed-line-box .img-box {
+    width: 16.66667%;
+    vertical-align: top;
+  }
+}
+
+.placeholder-box .img-box.fluid,
+.dashed-line-box .img-box.fluid {
+  width: 16.66667%;
+}
+
+.placeholder-box .img-box img,
+.dashed-line-box .img-box img {
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+.placeholder-box .img-box .btn-edit-image:hover,
+.dashed-line-box .img-box .btn-edit-image:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.placeholder-box .img-box .btn-edit-image:hover img,
+.dashed-line-box .img-box .btn-edit-image:hover img {
+  opacity: 0.5;
+}
+
+.placeholder-box .img-box .btn-edit-image:hover:after,
+.dashed-line-box .img-box .btn-edit-image:hover:after {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f067";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 40px;
+  top: 0;
+  color: #FFFFFF;
+}
+
+.placeholder-box .img-box .btn-add-image,
+.dashed-line-box .img-box .btn-add-image {
+  background: url("../images/btn-upload-image.jpg") no-repeat;
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+
+.placeholder-box .img-box .btn-add-image img,
+.dashed-line-box .img-box .btn-add-image img {
+  display: none;
+}
+
+.placeholder-box .text-box,
+.dashed-line-box .text-box {
+  font-size: 16px;
+  vertical-align: top;
+  display: inline-block;
+}
+
+@media only screen and (min-width: 768px) {
+  .placeholder-box .text-box,
+  .dashed-line-box .text-box {
+    width: 83.33333%;
+    vertical-align: top;
+  }
+}
+
+.placeholder-box .text-box.fluid,
+.dashed-line-box .text-box.fluid {
+  width: 83.33333%;
+}
+
+.placeholder-box .text-box p,
+.dashed-line-box .text-box p {
+  margin: .6em 0;
+}
+
+.container .row:last-child .placeholder-box {
+  margin: 0 4% 0 4%;
+}
+
+.container .row:nth-child(2) .placeholder-box {
+  margin: 4%;
+}
+
+.container .row:nth-child(2):nth-last-child(1) .placeholder-box {
+  margin: 4% 4% 0 4%;
+}
+
+.placeholder-box > div {
+  display: block;
+  float: left;
+}
+
+img.padding-top {
+  position: relative;
+  top: 6px;
+}
+
+.input-box {
+  width: 60%;
+}
+
+@media (min-width: 40em) {
+  .input-box {
+    width: 76%;
+  }
+}
+
+@media (min-width: 64em) {
+  .input-box {
+    width: 70%;
+  }
+}
+
+@media (min-width: 105em) {
+  .input-box {
+    width: 70%;
+  }
+}
+
+.input-box input[type=text] {
+  height: 40px;
+  width: 100%;
+  padding: 8px;
+  border-radius: 3px;
+  margin: 0;
+  border: 1px solid #CECECE;
+}
+
+.ui-sortable-helper {
+  width: 100% !important;
+  display: table !important;
+}
+
+.btn-group {
+  clear: both;
+  overflow: hidden;
+  padding: 10px 20px 12px 20px;
+  background: #F9F9F9;
+  border-top: 1px solid #E1E1E1;
+}
+
+.btn-submit {
+  float: right;
+}
+
+#poststuff .wp-detail-section {
+  background: white;
+  border: 1px solid #E5E5E5;
+  position: relative;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+  color: #5C5C5C;
+  margin-left: 1%;
+  width: 100%;
+  margin: 0;
+}
+
+@media (min-width: 64em) {
+  #poststuff .wp-detail-section {
+    font-size: 16px;
+    vertical-align: top;
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 64em) and (min-width: 768px) {
+  #poststuff .wp-detail-section {
+    width: 25%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width: 64em) {
+  #poststuff .wp-detail-section.fluid {
+    width: 25%;
+  }
+}
+
+@media (min-width: 85.375em) {
+  #poststuff .wp-detail-section {
+    font-size: 16px;
+    vertical-align: top;
+    display: inline-block;
+    margin-left: 1%;
+  }
+}
+
+@media only screen and (min-width: 85.375em) and (min-width: 768px) {
+  #poststuff .wp-detail-section {
+    width: 16.66667%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width: 85.375em) {
+  #poststuff .wp-detail-section.fluid {
+    width: 16.66667%;
+  }
+}
+
+#poststuff .wp-detail-section h2 {
+  font-size: 22px;
+  padding: 15px 20px 0 20px;
+}
+
+#poststuff .wp-detail-section h3 {
+  font-size: 15px;
+  color: #5C5C5C;
+  margin: 1em 0 0 0;
+}
+
+#poststuff .wp-detail-section p, #poststuff .wp-detail-section a {
+  font-size: 13px;
+  display: inline-block;
+  margin: 0;
+}
+
+.wp-detail-box {
+  padding: 0 20px 20px 20px;
+}
+
+body .swal2-modal {
+  font-family: "Open Sans",sans-serif;
+}
+
+.dashed-line-box {
+  margin: 4% 4% 5% 4%;
+  padding: 0;
+  width: auto;
+  border: none;
+}
+
+.dashed-line-box.hideAdd {
+  margin: 0 4% 5% 4%;
+}
+
+.dashed-line-box a {
+  border: 1px dashed #CECECE;
+  background: #f1f1f1;
+  color: #979797;
+  font-size: 20px;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  padding: 16px 10px;
+}
+
+.dashed-line-box a:hover {
+  opacity: 0.8;
+}

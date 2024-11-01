@@ -1,0 +1,333 @@
+// Compass CSS3
+@import "mixins";
+@import "variable";
+
+// clear default style
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-collapse: inherit;
+    border-spacing: 0;
+    border-color: inherit;
+    vertical-align: inherit;
+    text-align: left;
+    font-weight: inherit;
+    -webkit-border-horizontal-spacing: 0;
+    -webkit-border-vertical-spacing: 0;
+}
+
+// button
+.move{
+    cursor: move;
+}
+.move-icon{
+    width: 8px;
+    height: 40px;
+    display: inline-block;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAB3RJTUUH3wIDBycZ/Cj09AAAAAlwSFlzAAALEgAACxIB0t1+/AAAAARnQU1BAACxjwv8YQUAAAAWSURBVHjaY2DABhoaGupBGMRmYiAEAKo2BAFbROu9AAAAAElFTkSuQmCC');
+    cursor: move;
+    margin-right: 10px;
+}
+
+a.button-blue,
+input.button-green{
+    background: $btn-blue;
+    border: 1px solid $btn-blue-dark;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0px;
+    padding: 8px 10px;
+    cursor: pointer;
+    line-height: 1;
+    margin-top: 2px;
+    display: inline-block;
+    &:hover{
+        background: $btn-blue-darker;
+        i{
+            color: $white;
+        }
+    }
+}
+body .swal2-modal button.styled{
+    background: $btn-blue!important;
+    border: 1px solid $btn-blue-dark!important;
+    font-size: 14px;
+    padding: 10px 20px;
+    line-height: 1;
+}
+input.button-green{
+    background: $green;
+    border: 1px solid $green-darker;
+    &:hover{
+        background: $green-dark;
+    }
+}
+.remove{
+    cursor: pointer;
+    width: 27px;
+    height: 27px;
+    background:url('../images/btn-delete.jpg') no-repeat center;
+    margin: 5px 0 0 8px;
+    &:hover{
+        opacity: .8;
+    }
+}
+
+a.btn-question{
+    float: right;
+    color: $gray-light;
+    font-size: 18px;
+}
+
+// container
+
+#poststuff h2{
+    font-size: 16px;
+    color: $gray-dark;
+    padding: 10px 20px;
+}
+
+.section-placeholder{
+    width: 100%;
+    @include wider-than(tablet-landscape) {
+        @include col(7, 12);
+    }
+    @include wider-than(desktop) {
+        @include col(4, 12);
+    }
+}
+
+.blue-box{
+    background: $blue;
+    border: 1px solid $blue-lighter;
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.09);
+    font-size: 13px;
+    color: #569CDD;
+    padding: 2px 5px 2px 5px;
+    position: relative;
+    @include wider-than(tablet-landscape) {
+        padding: 2px 10px 2px 15px;
+    }
+    span{
+        line-height: 1.5;
+        padding: 8px 0 8px 5px;
+        display: inline-block;
+        font-size: 12px;
+        @include wider-than(tablet-landscape) {
+            padding: 8px 5px 8px 5px;
+            font-size: 13px;
+        }
+    }
+    .button-blue{
+        float: right;
+    }
+}
+.template{
+    display: none;
+}
+.post-detail-box{
+    padding: 25px;
+}
+.placeholder-box,
+.dashed-line-box{
+    background: $white;
+    border: 1px solid $gray-lighter;
+    border-radius: 3px;
+    font-size: 14px;
+    color: $gray-light;
+    padding: 10px;
+    clear: both;
+    overflow: hidden;
+    margin: 0 4% 4% 4%;
+    width: auto;
+
+    .img-box{
+        @include col(2, 12);
+        max-width: 40px;
+        margin-right: 10px;
+        position: relative;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        overflow: hidden;
+        img{
+            display: block;
+            width: 40px;
+            height: 40px;
+        }
+
+        // hover effect
+        .btn-edit-image{
+            &:hover{
+                background:rgba(0,0,0,0.8);
+                img{
+                    opacity: 0.5;
+                }
+                &:after{
+                    display: inline-block;
+                    font: normal normal normal 14px/1 FontAwesome;
+                    font-size: inherit;
+                    text-rendering: auto;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                    content: "\f067";
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
+                    line-height: 40px;
+                    top: 0;
+                    color: $white;
+                }
+            }
+        }
+
+        // empty upload image btn
+        .btn-add-image{
+            background: url('../images/btn-upload-image.jpg') no-repeat;
+            width: 40px;
+            height: 40px;
+            display: block;
+            img{
+                display: none;
+            }
+        }
+    }
+    .text-box{
+        @include col(10, 12);
+        p{
+            margin: .6em 0;
+        }
+    }
+}
+.container{
+    .row:last-child .placeholder-box{
+        margin: 0 4% 0 4%;
+    }
+    .row:nth-child(2) .placeholder-box{
+        margin: 4%;
+    }
+    .row:nth-child(2):nth-last-child(1) .placeholder-box{
+        margin: 4% 4% 0 4%;
+    }
+}
+.placeholder-box{
+    > div{
+        display: block;
+        float: left;
+    }
+}
+
+img.padding-top{
+    position: relative;
+    top: 6px
+}
+
+// input
+.input-box{
+    width: 60%;
+    @include wider-than(phone-landscape) {
+        width: 76%;
+    }
+    @include wider-than(tablet-landscape) {
+        width: 70%;
+    }
+    @include wider-than(large-desktop) {
+        width: 70%;
+    }
+    input[type=text]{
+        height: 40px;
+        width: 100%;
+        padding: 8px;
+        border-radius: 3px;
+        margin: 0;
+        border: 1px solid #CECECE;
+    }
+}
+
+.ui-sortable-helper{
+    width: 100% !important;
+    display: table !important;
+}
+.btn-group{
+    clear: both;
+    overflow: hidden;
+    padding: 10px 20px 12px 20px;
+    background:#F9F9F9;
+    border-top: 1px solid #E1E1E1;
+}
+.btn-submit{
+    float: right;
+}
+
+// right section plugin detail
+#poststuff .wp-detail-section{
+    background: white;
+    border: 1px solid $gray-box-boder;
+    position: relative;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+    color: $gray-dark;
+    margin-left: 1%;
+    width: 100%;
+    margin: 0;
+    @include wider-than(tablet-landscape) {
+        @include col(3, 12);
+    }
+    @include wider-than(desktop) {
+        @include col(2, 12);
+        margin-left: 1%;
+    }
+
+    h2{
+        font-size: 22px;
+        padding: 15px 20px 0 20px
+    }
+    h3{
+        font-size: 15px;
+        color: $gray-dark;
+        margin: 1em 0 0 0;
+    }
+    p,a{
+        font-size: 13px;
+        display: inline-block;
+        margin: 0;
+    }
+}
+.wp-detail-box{
+    padding: 0 20px 20px 20px;
+}
+
+
+// sweetalert
+body{
+    .swal2-modal{
+        font-family: "Open Sans",sans-serif;
+    }
+
+}
+
+.dashed-line-box{
+    margin: 4% 4% 5% 4%;
+    padding: 0;
+    width: auto;
+    border: none;
+
+    &.hideAdd{
+        margin: 0 4% 5% 4%;
+    }
+    a{
+        border: 1px dashed $gray-lighter;
+        background: #f1f1f1;
+        color: $gray-light;
+        font-size: 20px;
+        display: block;
+        text-align: center;
+        cursor: pointer;
+        padding: 16px 10px;
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+}

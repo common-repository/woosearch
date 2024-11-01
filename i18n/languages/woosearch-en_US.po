@@ -1,0 +1,105 @@
+# Copyright (C) 2016 CTKpro
+# This file is distributed under the same license as the WooSearch package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WooSearch 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/woosearch\n"
+"POT-Creation-Date: 2016-07-28 07:45:24+00:00\n"
+"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: grunt-wp-i18n 0.5.4\n"
+"X-Poedit-KeywordsList: __;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;"
+"_nx_noop:1,2,3c;esc_attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Country: United States\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-Bookmarks: \n"
+"X-Textdomain-Support: yes\n"
+
+#. Plugin Name of the plugin/theme
+msgid "WooSearch"
+msgstr ""
+
+#: includes/woosearch-widget.php:76
+msgid "Click here to search"
+msgstr ""
+
+#: includes/woosearch-widget.php:81
+msgid "Set placeholder"
+msgstr ""
+
+#: includes/woosearch-widget.php:84
+msgid "Search both Posts and Products (Uncheck for search product only)"
+msgstr ""
+
+#: views/woosearch-options.php:47
+msgid "Default Search Keywords"
+msgstr ""
+
+#: views/woosearch-options.php:61
+msgid "Drag and drop to reorder ( %s limits)"
+msgstr ""
+
+#: views/woosearch-options.php:107
+msgid "Save Changes"
+msgstr ""
+
+#: views/woosearch-options.php:120
+msgid "Changelog"
+msgstr ""
+
+#: views/woosearch-options.php:121
+msgid "See what's new in"
+msgstr ""
+
+#: views/woosearch-options.php:123
+msgid "version %s"
+msgstr ""
+
+#: views/woosearch-options.php:125
+msgid "Resources"
+msgstr ""
+
+#: views/woosearch-options.php:127
+msgid "Getting Started"
+msgstr ""
+
+#: views/woosearch-options.php:130
+msgid "Feedback"
+msgstr ""
+
+#: views/woosearch-options.php:135
+msgid "WooSearch version %s by CTKpro"
+msgstr ""
+
+#: views/woosearch-options.php:243
+msgid "Keyword can't be empty"
+msgstr ""
+
+#: woosearch.php:27
+msgid "WooCommerce is deactivate! Please activate WooCommerce first."
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://www.ctkpro.com/woosearch/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "An search engine that helps you search products based on WooCommerce."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "CTKPro"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://www.ctkpro.com"
+msgstr ""

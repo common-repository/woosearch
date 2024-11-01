@@ -1,0 +1,36 @@
+//--------------------------------------------------------------
+// Media Query Breakpoints
+//--------------------------------------------------------------
+
+/// Breakpoints Sass list map for Media Queries @mixin
+/// @group wds
+$breakpoints: (
+    large-desktop: 105em, // 1680px
+    desktop: 85.375em, // 1366px
+    tablet-landscape: 64em, // 1024px
+    tablet-portrait: 48em, // 768px
+    phone-landscape: 40em, // 640px
+    phone-portrait: 22.5em, // 360px
+);
+
+//--------------------------------------------------------------
+// Colors
+//--------------------------------------------------------------
+$white: #FFFFFF;
+
+$gray-dark: #5C5C5C;
+$gray-light: #979797;
+$gray-lighter: #CECECE;
+
+$gray-box-boder: #E5E5E5;
+
+$blue: #CBDCEC;
+$blue-lighter: #B5C5D5;
+
+$btn-blue: #2EA2CC;
+$btn-blue-dark: #0074A2;
+$btn-blue-darker: #298CBA;
+
+$green: #26C281;
+$green-dark: #1dac71;
+$green-darker: #1C9563;
